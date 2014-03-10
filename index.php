@@ -21,7 +21,28 @@
         }
         ?>
         <?php
+        if($_GET['notice2']) {
+            echo "<section class='notice'>";
+            echo $_GET['notice'];
+            echo "</section>";
+        }
+        ?>
+        <?php
+        if($_GET['notice3']) {
+            echo "<section class='notice'>";
+            echo $_GET['notice'];
+            echo "</section>";
+        }
+        ?>
+        <?php
         if($_GET['cancel']) {
+            echo "<section class='next'>";
+            echo $_GET['cancel'];
+            echo "</section>";
+        }
+        ?>
+        <?php
+        if($_GET['cancel2']) {
             echo "<section class='next'>";
             echo $_GET['cancel'];
             echo "</section>";
