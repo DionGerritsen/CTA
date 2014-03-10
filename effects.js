@@ -24,7 +24,7 @@ function toggleDelay() {
 if(stops) {
     if(stops.length <= 1) {
         stopsMessage.innerHTML = "via " + stops[0];
-        if(stops.length == 0) {
+        if(stops.length == 0 || stops[0] == "") {
             stopsMessage.innerHTML = "";
         }
     } else {

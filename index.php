@@ -11,7 +11,7 @@
     <section class="departure-time"><?php echo $_GET['time']; ?></section>
     <section class="train" id="type"><?php echo $_GET['type']; ?><img src="nslogo.svg"/></section>
     <section class="destination"><?php echo $_GET['destination']; ?></section>
-    <section class="stops" id="stops">via Kogerveld, Zaandam, Sloterdijk en Lelylaan</section>
+    <section class="stops" id="stops"></section>
     <footer>
         <?php
         if($_GET['notice']) {
