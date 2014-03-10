@@ -20,7 +20,9 @@
         var stops = [<?php
             $stops = explode(",", $_GET['stops']);
             foreach($stops as $stop) {
-                echo "'" + $stop + ", ";
+                echo("'");
+                echo($stop);
+                echo("', ");
             }
         ?>];
     </script>
