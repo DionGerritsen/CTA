@@ -12,7 +12,7 @@
     <section class="destination"><?php echo $_GET['destination']; ?></section>
     <section class="stops" id="stops">via Kogerveld, Zaandam, Sloterdijk en Lelylaan</section>
     <footer>
-        <section class="next">Volgende trein: <?php echo $_GET['next_time']; ?><?php echo $_GET['next_type']; ?><?php echo $_GET['next_destination']; ?></section>
+        <section class="next">Volgende trein: <?php echo $_GET['next_time']; ?> <?php echo $_GET['next_type']; ?> <?php echo $_GET['next_destination']; ?></section>
     </footer>
     <script>
         var setDelay = <?php echo $_GET['delay']; ?>;
