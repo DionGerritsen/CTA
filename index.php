@@ -12,6 +12,13 @@
     <section class="destination"><?php echo $_GET['destination']; ?></section>
     <section class="stops" id="stops">via Kogerveld, Zaandam, Sloterdijk en Lelylaan</section>
     <footer>
+        <?php
+        if($_GET['notice']) {
+            echo "<section class='notice'>";
+            echo $_GET['notice'];
+            echo "</section>";
+        }
+        ?>
         <section class="next">Volgende trein: <?php echo $_GET['next_time']; ?> <?php echo $_GET['next_type']; ?> <?php echo $_GET['next_destination']; ?></section>
     </footer>
     <script>
