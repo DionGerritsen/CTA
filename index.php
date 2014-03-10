@@ -19,6 +19,13 @@
             echo "</section>";
         }
         ?>
+        <?php
+        if($_GET['cancel']) {
+            echo "<section class='next'>";
+            echo $_GET['cancel'];
+            echo "</section>";
+        }
+        ?>
         <section class="next">Volgende trein: <?php echo $_GET['next_time']; ?> <?php echo $_GET['next_type']; ?> <?php echo $_GET['next_destination']; ?></section>
     </footer>
     <script>
