@@ -48,7 +48,7 @@
             echo "</section>";
         }
         ?>
-        <section class="next"><?php if($_GET['next_time']) { ?>Volgende trein: <?php } ?><?php echo $_GET['next_time']; ?> <?php echo $_GET['next_type']; ?> <?php echo $_GET['next_destination']; ?></section>
+        <?php if($_GET['next_time']) { ?><section class="next">Volgende trein:<?php echo $_GET['next_time']; ?> <?php echo $_GET['next_type']; ?> <?php echo $_GET['next_destination']; ?></section> <?php } ?>
     </footer>
     <script>
         var setDelay = <?php echo $_GET['delay']; ?>;
