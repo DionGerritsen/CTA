@@ -16,7 +16,16 @@
         <section class="next">Volgende trein: 08:52 Sprinter Schiphol</section>
     </footer>
     <script>
-        var setDelay = <?php echo $_GET['delay']; ?>
+        var setDelay = <?php echo $_GET['delay']; ?>;
+        var stops = [
+        <?php
+            $stops = $_GET['stops'];
+            $stops = $stops.explode(',');
+            for($i = 0; $i < $stops.length(), $i++) {
+                echo $stops[$i] + ",";
+            }
+        ?>
+        ];
     </script>
     <script src="effects.js"></script>
 </body>

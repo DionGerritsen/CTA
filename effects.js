@@ -1,8 +1,9 @@
 console.log("JS Loaded");
 
-var min, delay, train, message;
+var min, stops, delay, train, message;
 
-min = setDelay || false ;
+min = setDelay || false;
+stops = stops || false;
 min = 5 * Math.round(min/5);
 delay = document.getElementById("delay");
 train = document.getElementById("type");
@@ -28,5 +29,7 @@ if(min && min > 3) {
         toggleDelay();
     }, 5000);
 }
+
+console.log(stops);
 
 
