@@ -29,9 +29,11 @@ if(stops) {
         for(var i = 0; i < stops.length; i++) {
             stopsMessage.innerHTML += stops[i];
             if(i == stops.length - 2) {
-                stopsMessage.innerHTML += "en ";
+                stopsMessage.innerHTML += " en ";
             } else {
-                stopsMessage.innerHTML += ", ";
+                if(i != stops.length - 1) {
+                    stopsMessage.innerHTML += ", ";
+                }
             }
         }
     }
