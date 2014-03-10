@@ -15,6 +15,9 @@
         <section class="next">08:22 Sprinter Schiphol rijdt niet</section>
         <section class="next">Volgende trein: 08:52 Sprinter Schiphol</section>
     </footer>
+    <script>
+        var setDelay = <?php echo $_GET['delay']; ?>
+    </script>
     <script src="effects.js"></script>
 </body>
 </html>

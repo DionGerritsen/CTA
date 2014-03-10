@@ -2,7 +2,7 @@ console.log("JS Loaded");
 
 var min, delay, train, message;
 
-min = 90;
+min = setDelay || false ;
 min = 5 * Math.round(min/5);
 delay = document.getElementById("delay");
 train = document.getElementById("type");
