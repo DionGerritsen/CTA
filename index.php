@@ -17,11 +17,13 @@
     </footer>
     <script>
         var setDelay = <?php echo $_GET['delay']; ?>;
-        var stops = [
+        var stops = [];
         <?php
-            echo("'test'");
+            $stops = explode(",", $_GET['stops']);
+            foreach($stops as $stop) {
+                echo $stop;
+            }
         ?>
-        ];
     </script>
     <script src="effects.js"></script>
 </body>
