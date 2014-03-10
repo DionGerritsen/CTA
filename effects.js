@@ -23,20 +23,20 @@ function toggleDelay() {
 
 if(stops) {
     if(stops.length <= 1) {
-        stopsMessage.innerText = "via " + stops[0];
+        stopsMessage.innerHTML = "via " + stops[0];
     } else {
-        stopsMessage.innerText = "via ";
+        stopsMessage.innerHTML = "via ";
         for(var i = 0; i < stops.length; i++) {
-            stopsMessage.innerText += stops[i];
-            if(i == stops.length - 1) {
-                stopsMessage.innerText += "en ";
+            stopsMessage.innerHTML += stops[i];
+            if(i == stops.length - 2) {
+                stopsMessage.innerHTML += "en ";
             } else {
-                stopsMessage.innerText += ", ";
+                stopsMessage.innerHTML += ", ";
             }
         }
     }
 } else {
-    stopsMessage.innerText = "";
+    stopsMessage.innerHTML = "";
 }
 
 if(min && min > 3) {
