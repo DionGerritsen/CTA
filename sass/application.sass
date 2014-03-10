@@ -1,4 +1,71 @@
+*
+  box-sizing: border-box
+
 body, html
   background: #fff
   height: 100%
   width: 100%
+
+  margin: 0
+  padding: 0
+
+  font-family: 'FrutigerLT-Bold', sans-serif
+
+
+.delay
+  position: absolute
+  top: 0
+  right: 0
+  background: #252566
+  width: 60%
+  height: 170px
+  line-height: 170px
+  font-size: 170px
+  color: #fff
+  padding-left: 40px
+  display: none
+
+.train
+  position: absolute
+  top: 40px
+  right: 60px
+  font-size: 150px
+  color: #252566
+  img
+    vertical-align: middle
+    margin-left: 40px
+  &.hidden
+    display: none
+
+.departure-time
+  font-size: 180px
+  color: #252566
+  padding: 5px 40px
+  margin-bottom: -40px
+
+.destination
+  font-size: 250px
+  color: #252566
+  padding: 5px 40px
+
+.stops
+  font-size: 120px
+  color: #252566
+  padding: 5px 40px
+footer
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  .notice
+    border-top: 4px solid #252566
+    font-size: 75px
+    color: #252566
+    padding: 7px 40px
+  .next
+    background: #252566
+    color: #fff
+    font-size: 75px
+    padding: 7px 40px
+    & + .next
+      border-top: 4px solid #fff
