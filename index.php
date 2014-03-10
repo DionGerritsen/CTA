@@ -19,11 +19,7 @@
         var setDelay = <?php echo $_GET['delay']; ?>;
         var stops = [
         <?php
-            $stops = $_GET['stops'];
-            $stops = $stops.explode(',');
-            for($i = 0; $i < $stops.length, $i++) {
-                echo $stops[$i] + ",";
-            }
+            echo("'test'");
         ?>
         ];
     </script>
