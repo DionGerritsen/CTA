@@ -21,7 +21,7 @@
         <?php
             $stops = $_GET['stops'];
             $stops = $stops.explode(',');
-            for($i = 0; $i < $stops.length(), $i++) {
+            for($i = 0; $i < $stops.length, $i++) {
                 echo $stops[$i] + ",";
             }
         ?>
